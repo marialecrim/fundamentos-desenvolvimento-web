@@ -1,34 +1,162 @@
-<!-- HTML: estrutura do site (cria o conteúdo e define o que aparece na tela) -->
-
-<!DOCTYPE html> <!-- Informa ao navegador que estamos usando HTML5 -->
-<html lang="pt-BR"> <!-- Inicia o documento e define o idioma como português brasileiro -->
-
-<head> <!-- Área de configurações e informações da página -->
-    <meta charset="UTF-8"> <!-- Permite utilizar acentos e caracteres especiais -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adapta o site a diferentes tamanhos de tela -->
-    <title>Site UFG</title> <!-- Define o nome que aparece na aba do navegador -->
-    <link rel="stylesheet" href="style.css"> <!-- Conecta o arquivo CSS ao HTML -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f7fb">
+    <meta name="description" content="Portfólio de Maria: criatividade, aprendizado e primeiros passos no universo digital.">
+    <title>Maria | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-<body> <!-- Inicia o conteúdo que será exibido no site -->
+    <header class="site-header">
+        <nav class="navigation container" aria-label="Navegação principal">
+            <a class="brand" href="#inicio" aria-label="Maria — início">
+                <span class="brand-mark" aria-hidden="true">M.</span>
+                <span>Maria<span class="brand-caption">portfólio pessoal</span></span>
+            </a>
 
-    <nav> <!-- Área de navegação do site -->
-        <a class="logo" href="index.html">Maria</a> <!-- Cria um link para a página inicial e atribui a classe logo -->
-        <ul> <!-- Cria uma lista não ordenada para os links de navegação -->
-            <li><a href="#">Início</a></li> <!-- Cria um item de lista com um link -->
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+            </button>
 
-    <section class="banner"> <!-- Cria uma seção para o banner principal -->
-        <h1>Olá Mundo, me chamo Maria!</h1> <!-- Título principal -->
-        <h2>Prazer em conhecê-lo!</h2> <!-- Subtítulo -->
-        <button id="saibamais">Saiba mais</button>
-        <button id="inscrever">Inscreva-se</button> <!-- Cria um botão com ID para identificá-lo -->
-    </section>
-    <script src="script.js"></script> <!-- Conecta o arquivo JavaScript ao HTML -->
+            <ul class="nav-links" id="menu-principal">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#explorando">Explorando</a></li>
+                <li><a class="nav-contact" href="#contato">Contato <span aria-hidden="true">↗</span></a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main id="conteudo">
+        <section class="hero container" id="inicio">
+            <div class="hero-copy reveal">
+                <p class="eyebrow"><span class="status-dot"></span> UM OLHAR CRIATIVO, SEMPRE EM MOVIMENTO</p>
+                <h1>Ideias que ganham <span>vida na tela.</span></h1>
+                <p class="hero-description">Oi, eu sou a Maria! Estou descobrindo o universo da criação digital e transformando cada aprendizado em uma nova possibilidade.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#explorando">Conheça meu espaço <span aria-hidden="true">↘</span></a>
+                    <a class="text-link" href="#sobre">Um pouco sobre mim <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="hero-note">
+                    <span class="note-line" aria-hidden="true"></span>
+                    <span>Aprendendo, experimentando<br>e criando um passo de cada vez.</span>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal" aria-label="Imagem do Centro de Eventos da Universidade Federal de Goiás">
+                <div class="image-frame">
+                    <img src="img/imagem_ufg.png" alt="Centro de Eventos da Universidade Federal de Goiás em Goiânia">
+                    <span class="image-tag"><span aria-hidden="true">✳</span> Meu ponto de partida</span>
+                </div>
+                <div class="visual-sticker" aria-hidden="true">
+                    <span>CURIO-</span>
+                    <span>-SIDADE</span>
+                    <span class="sticker-star">✳</span>
+                </div>
+                <span class="visual-index" aria-hidden="true">01 / 03</span>
+            </div>
+        </section>
+
+        <section class="intro-strip" aria-label="Apresentação">
+            <div class="container intro-strip-inner">
+                <span>UM COMEÇO CHEIO DE POSSIBILIDADES</span>
+                <span class="strip-star" aria-hidden="true">✳</span>
+                <span>FEITO COM CURIOSIDADE</span>
+                <span class="strip-star" aria-hidden="true">✳</span>
+                <span>EM CONSTRUÇÃO, COMO TODA BOA IDEIA</span>
+            </div>
+        </section>
+
+        <section class="about section container" id="sobre">
+            <div class="section-label reveal">
+                <span class="section-number">01</span>
+                <span>QUEM SOU</span>
+            </div>
+            <div class="about-content reveal">
+                <h2>Todo começo tem algo especial: <span>o espaço para imaginar.</span></h2>
+                <div class="about-bottom">
+                    <p>Este portfólio é meu cantinho para registrar ideias, explorar novas ferramentas e compartilhar minha jornada. Ainda estou no começo — e é justamente isso que torna cada descoberta tão interessante.</p>
+                    <div class="about-aside">
+                        <span class="aside-icon" aria-hidden="true">✳</span>
+                        <span>Em constante<br>aprendizado</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="exploring section" id="explorando">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div class="section-label">
+                        <span class="section-number">02</span>
+                        <span>MEU UNIVERSO</span>
+                    </div>
+                    <h2>O que estou <span>explorando.</span></h2>
+                    <p>Pequenos passos, novas habilidades e muita vontade de aprender.</p>
+                </div>
+
+                <div class="interest-grid">
+                    <article class="interest-card reveal">
+                        <span class="card-number">01 / DESCOBRIR</span>
+                        <span class="card-icon icon-blue" aria-hidden="true">⌘</span>
+                        <h3>O mundo da web</h3>
+                        <p>Conhecendo como HTML, CSS e JavaScript se juntam para dar forma a uma página.</p>
+                        <span class="card-arrow" aria-hidden="true">↗</span>
+                    </article>
+                    <article class="interest-card reveal">
+                        <span class="card-number">02 / IMAGINAR</span>
+                        <span class="card-icon icon-yellow" aria-hidden="true">✳</span>
+                        <h3>Ideias visuais</h3>
+                        <p>Experimentando cores, formas e composições para criar experiências com personalidade.</p>
+                        <span class="card-arrow" aria-hidden="true">↗</span>
+                    </article>
+                    <article class="interest-card reveal">
+                        <span class="card-number">03 / CONSTRUIR</span>
+                        <span class="card-icon icon-pink" aria-hidden="true">↗</span>
+                        <h3>Novas possibilidades</h3>
+                        <p>Transformando curiosidade em prática e cada desafio em mais uma oportunidade.</p>
+                        <span class="card-arrow" aria-hidden="true">↗</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section section container" id="contato">
+            <div class="contact-card reveal">
+                <div class="contact-copy">
+                    <div class="section-label section-label-light">
+                        <span class="section-number">03</span>
+                        <span>PRÓXIMO CAPÍTULO</span>
+                    </div>
+                    <h2>Boas ideias começam com uma <span>conversa.</span></h2>
+                    <p>Este espaço está só começando. Em breve, novos projetos e formas de entrar em contato vão aparecer por aqui.</p>
+                </div>
+                <div class="contact-orbit" aria-hidden="true">
+                    <span class="orbit-text">ATÉ A PRÓXIMA · ATÉ A PRÓXIMA ·</span>
+                    <span class="orbit-center">M.</span>
+                    <span class="orbit-spark">✳</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a class="footer-brand" href="#inicio">Maria<span>.</span></a>
+            <p>Um começo criativo, feito com carinho.</p>
+            <a class="back-to-top" href="#inicio">Voltar ao topo ↑</a>
+            <span class="copyright">© <span id="current-year">2026</span> Maria</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</html> <!-- Finaliza o documento HTML -->
+</html>
