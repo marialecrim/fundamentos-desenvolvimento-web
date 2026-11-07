@@ -1,0 +1,34 @@
+<!-- HTML: estrutura do site (cria o conteúdo e define o que aparece na tela) -->
+
+<!DOCTYPE html> <!-- Informa ao navegador que estamos usando HTML5 -->
+<html lang="pt-BR"> <!-- Inicia o documento e define o idioma como português brasileiro -->
+
+<head> <!-- Área de configurações e informações da página -->
+    <meta charset="UTF-8"> <!-- Permite utilizar acentos e caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adapta o site a diferentes tamanhos de tela -->
+    <title>Site UFG</title> <!-- Define o nome que aparece na aba do navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Conecta o arquivo CSS ao HTML -->
+</head>
+
+<body> <!-- Inicia o conteúdo que será exibido no site -->
+
+    <nav> <!-- Área de navegação do site -->
+        <a class="logo" href="index.html">Maria</a> <!-- Cria um link para a página inicial e atribui a classe logo -->
+        <ul> <!-- Cria uma lista não ordenada para os links de navegação -->
+            <li><a href="#">Início</a></li> <!-- Cria um item de lista com um link -->
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section class="banner"> <!-- Cria uma seção para o banner principal -->
+        <h1>Olá Mundo, me chamo Maria!</h1> <!-- Título principal -->
+        <h2>Prazer em conhecê-lo!</h2> <!-- Subtítulo -->
+        <button id="saibamais">Saiba mais</button>
+        <button id="inscrever">Inscreva-se</button> <!-- Cria um botão com ID para identificá-lo -->
+    </section>
+    <script src="script.js"></script> <!-- Conecta o arquivo JavaScript ao HTML -->
+
+</body>
+</html> <!-- Finaliza o documento HTML -->

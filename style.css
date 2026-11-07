@@ -1,0 +1,48 @@
+/*CSS - Aparência do site (É responsável pela parte visual, ou seja, como o site vai ficar.)*/
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+nav {
+  background-color: rgb(3, 70, 116);
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: white; /* Esse código seleciona os links (<a>) que estão dentro do <nav>, ou seja, os links do menu de navegação.*/
+  text-decoration: none;
+}
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+.banner {
+ background-image: url("img/imagem_ufg.png");
+  background-size: cover;
+  background-position: center 40%;
+  background-size: cover;
+  color: rgb(3, 70, 116);
+  text-align: center;
+  padding: 130px 20px;
+}
+
+.banner h1 {
+  transform: translateY(40px);
+}
+.banner h2 {
+  transform: translateY(40px);
+}
+
+button {
+  font-size: 18px;
+  padding: 12px 28px;
+  margin: 60px 10px 10px; /*40px: distância acima dos botões. - 10px: distância nas laterais. - 10px: distância abaixo.*/
+}
